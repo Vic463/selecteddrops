@@ -1,0 +1,55 @@
+/* Her har vi styles til vores computer version */
+/* ------------------------------------------------------------- */
+
+$computer: "screen and (min-width: 992px)";
+@media #{$computer} {
+  #index{
+    background: url("../images/index-web.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  header {
+    #logoweb{
+      width: 30vw;
+      max-width: 250px;
+    }
+    nav:last-of-type{
+      background-color: rgba(214, 191, 120, 0.95);
+      padding: 8px 0;
+    }
+  }
+  #nbikon{
+    top: 20vh;
+    width: 43px;
+  }
+  #nbinfo{top: 20vh;}
+  #produktbanner{
+    background: url("../images/produktbanner-web.jpg");
+    background-color: rgb(153, 115, 73);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    div:only-child{background-color: rgba(214, 191, 120, 0.7);}
+  }
+  #forsidevideo{padding-bottom: 60%;}
+  #guidebanner{
+    background: url("../images/guidebanner-web.jpg");
+    background-color: rgb(153, 115, 73);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    div:only-child{background-color: rgba(214, 191, 120, 0.7);}
+  }
+  #stortbillede{width: 100%;}
+  #mini{width: 100%;}
+  .verdensmål{img{width: 120px;}}
+  .video{padding-bottom: 0%;}
+  #fejlside{
+    p:first-of-type{font-size: 20pt;}
+    p:last-of-type{font-size: 14pt;}
+    img{max-width: 1000px;}
+  }
+
+
+}

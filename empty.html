@@ -1,0 +1,169 @@
+<!-- Instruktion til webbrowser om at vi kører HTML5 -->
+<!DOCTYPE html>
+
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - det ser brugeren ikke, men det fortæller noget om siden -->
+<head>
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>Ikke kodet</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.typekit.net/udj4vfl.css">
+    <script src="https://kit.fontawesome.com/11a5e78038.js" crossorigin="anonymous"></script>
+
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<!-- i <body> har man alt indhold på siden som brugeren kan se -->
+<body>
+    <header class="container-fluid sticky-top px-0">
+        <nav class="container-fluid d-flex d-lg-none flex-row justify-content-between align-items-center">
+            <div class="click py-1" id="logotab"><a href="forside.html"><img src="images/Logo.svg" alt="Selected Drops logo"></a></div>
+            <div class="d-flex flex-row">
+                <div class="mr-2">
+                    <a class="nav-link p-0 m-0" href="#" id="navbarDD" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-shopping-bag text-sort seksten"></i>
+                    </a>
+                    <div class="dropdown-menu rounded-0 px-2 bg-primary text-center" aria-labelledby="navbarDD">
+                        <p class="seksten mt-1">Indkøbskurv</p>
+                        <p class="text-muted my-3">Din indkøbskurv er tom</p>
+                        <a href="empty.html" class="btn overskrift bg-dark text-sort mb-1">Gå til betaling</a>
+                    </div>
+                </div>
+                <div>
+                    <a class="nav-link p-0 m-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-bars text-sort seksten"></i>
+                    </a>
+                    <div class="dropdown-menu rounded-0 bg-primary text-right pr-1 pr-sm-2 pl-sm-5" aria-labelledby="navbarDropdown">
+                        <p class="mt-2"><a href="produkt.html" class="text-decoration-none text-sort">Vores produkt</a></p>
+                        <p class="mt-2"><a href="tour.html" class="text-decoration-none text-sort">Besøg destilleriet</a></p>
+                        <p class="mt-2"><a href="sust.html" class="text-decoration-none text-sort">Bæredygtighed</a></p>
+                        <p class="mt-2"><a href="historie.html" class="text-decoration-none text-sort">Vores historie</a></p>
+                        <p class="mt-2"><a class="text-decoration-none text-sort click kontaktlink">Kontakt</a></p>
+                        <p class="my-2"><a href="erhverv.html" class="text-decoration-none text-sort">Bliv forhandler</a></p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="container-fluid d-none d-lg-flex flex-row justify-content-center align-items-center">
+            <div class="click py-1" id="logoweb"><a href="forside.html"><img src="images/Logo.svg" alt="Selected Drops logo"></a></div>
+        </nav>
+        <nav class="container-fluid d-none d-lg-block">
+            <div class="container d-none d-lg-flex flex-row justify-content-between align-items-center">
+                <a href="produkt.html" class="text-decoration-none text-sort fjorten">Vores produkt</a>
+                <a href="tour.html" class="text-decoration-none text-sort fjorten">Besøg destilleriet</a>
+                <a href="sust.html" class="text-decoration-none text-sort fjorten">Bæredygtighed</a>
+                <a href="historie.html" class="text-decoration-none text-sort fjorten">Vores historie</a>
+                <a class="text-decoration-none text-sort fjorten click kontaktlink">Kontakt</a>
+                <a href="erhverv.html" class="text-decoration-none text-sort fjorten">Bliv forhandler</a>
+                <div>
+                    <a class="nav-link p-0 m-0" href="#" id="navDD" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-shopping-bag text-sort seksten"></i>
+                    </a>
+                    <div class="dropdown-menu rounded-0 px-2 bg-primary text-center" aria-labelledby="navDD">
+                        <p class="seksten mt-1">Indkøbskurv</p>
+                        <p class="text-muted my-3">Din indkøbskurv er tom</p>
+                        <a href="empty.html" class="btn overskrift bg-dark text-sort mb-1">Gå til betaling</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="d-block d-sm-none bg-gold border-bottom border-sort position-sticky">
+            <div id="nbmob" class="d-flex flex-row justify-content-center align-items-center click">
+                <p class="">Nyhedsbrev</p>
+                <i id="pil" class="fas fa-chevron-down ml-1"></i>
+            </div>
+            <div id="nbmobinfo">
+                <div class="d-flex flex-column align-items-center px-2 py-1">
+                    <p class="ti">Tilmeld dig vores nyhedsbrev, og få de seneste nyheder, tilbud, tips & tricks og gode råd inden for alt, hvad der har med vores rom og spiritus at gøre.</p>
+                    <input class="mt-1" name="Navn" type="text" aria-label="Navn" placeholder="Navn">
+                    <input class="mt-1" name="E-mail" type="email" aria-label="E-mail" placeholder="E-mail">
+                    <a href="#" class="btn overskrift ti bg-dark mt-2 mb-1 text-sort">Tilmeld mig</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="d-none d-sm-block">
+        <div id="nbikon" class="click position-fixed bg-gold"><img src="images/Nyhedsbrev-fane.svg" alt="Nyhedsbrev"></div>
+        <div id="nbinfo" class="position-fixed bg-primary">
+            <div class="d-flex flex-column align-items-center px-2 py-1">
+                <div id="luknb" class="btn overskrift bg-secondary align-self-end">Luk vindue</div>
+                <h3 class="overskrift mb-2">Nyhedsbrev</h3>
+                <p>Tilmeld dig vores nyhedsbrev, og få de seneste nyheder, tilbud, tips & tricks og gode råd inden for alt, hvad der har med vores rom og spiritus at gøre.</p>
+                <input class="mt-1" name="Navn" type="text" aria-label="Navn" placeholder="Navn">
+                <input class="mt-1" name="E-mail" type="email" aria-label="E-mail" placeholder="E-mail">
+                <a href="#" class="btn overskrift bg-dark mt-2 mb-1 text-sort">Tilmeld mig</a>
+            </div>
+        </div>
+    </div>
+
+    <main class="container my-2 px-3 pb-3 bg-primary d-flex flex-column align-items-center" id="fejlside">
+        <p class="overskrift mt-3 mb-3 mb-sm-4" id="overskrift">Denne side er desværre tom</p>
+        <p>Jævnfør vores rapport, er denne side ikke kodet.<br><br>Vi henviser til en af vores andre undersider, og ellers har du mulighed for at <span><a href="forside.html" class="text-dark">gå tilbage til forsiden her</a></span>.</p>
+    </main>
+
+    <footer class="container-fluid bg-secondary">
+        <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-center pt-3 pb-2 pb-lg-3">
+            <div class="mb-4 mb-lg-0" id="kontakt">
+                <p class="ti mb-1">Borgergade 143</p>
+                <p class="ti mb-1">4241 Vemmelev</p>
+                <p class="ti mb-1">kontakt@selecteddrops.dk</p>
+                <p class="ti mb-1">+45 12 34 56 78</p>
+                <div class="text-center">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square text-sort tyve mr-1"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin text-sort tyve"></i></a>
+                </div>
+            </div>
+            <div class="d-flex flex-column justify-content-between">
+                <a href="error404.html" class="ti mb-1 mb-lg-2 text-sort">Handelsbetingelser</a>
+                <a href="error404.html" class="ti mb-1 mb-lg-2 text-sort">Eksterne forhandlere</a>
+                <a href="https://www.verdensmaalene.dk/" target="_blank" class="ti mb-1 mb-lg-2 text-sort">FN's verdensmål</a>
+                <p class="ti mb-1">Alle rettigheder forbeholdes</p>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(function () {
+        $("#nbmob").click(function(){
+            $("#pil").toggleClass('fa-chevron-up');
+            $("#nbmobinfo").slideToggle(500);
+            $("#nbmob, #nbmobinfo").toggleClass('bg-primary')
+        });
+        $("#nbikon").click(function(){
+            $("#nbikon").hide(0);
+            $("#nbinfo").show(500)
+        });
+        $("#luknb").click(function(){
+            $("#nbinfo").hide(500);
+            $("#nbikon").show(0)
+        });
+        $(".kontaktlink").click(function(){
+            $("html,body").animate({scrollTop: $("#kontakt").offset().top}, 700);
+            setTimeout(function(){
+                $("#kontakt p").animate({fontSize: '14pt'}, 500);
+            }, 500);
+            setTimeout(function(){
+                $("#kontakt p").animate({fontSize: '10pt'}, 500);
+            }, 1000);
+        });
+    });
+</script>
+</body>
+</html>

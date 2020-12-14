@@ -1,0 +1,67 @@
+/* Her har vi styles til vores tablet version */
+/* ------------------------------------------------------------- */
+
+$tablet: "screen and (min-width: 500px)";
+@media #{$tablet} {
+  #index{
+    background: url("../images/index-tab.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #logotab{width: 20vw;}
+  #nbikon{
+    padding: 8px;
+    width: 35px;
+    z-index: 1;
+    left: 0;
+    top: 12vh;
+  }
+  #nbinfo{
+    display: none;
+    z-index: 1;
+    left: 0;
+    top: 12vh;
+    width: 95vw;
+    #luknb{
+      font-size: 8pt;
+      padding: 2px 4px;
+    }
+    div p{max-width: 600px;}
+  }
+  #produktbanner{
+    background: url("../images/produktbanner-tab.jpg");
+    background-color: rgb(153, 115, 73);
+    height: 540px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    div:only-child{
+      background-color: rgba(214, 191, 120, 0.7);
+      div{width: 75%;}
+    }
+  }
+  #guidebanner{
+    background: url("../images/guidebanner-tab.jpg");
+    background-color: rgb(153, 115, 73);
+    height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    div:only-child{
+      background-color: rgba(214, 191, 120, 0.7);
+      div{width: 75%;}
+    }
+  }
+  #stortbillede{
+    width: 80%;
+    align-self: center;
+  }
+  #mini{width: 20%;}
+  .verdensmål{img{width: 104px;}}
+  #fejlside{
+    p:first-of-type{font-size: 18pt;}
+  }
+
+
+}

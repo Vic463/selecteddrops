@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /index.html/
+Disallow: /empty.html/
+Disallow: /error404.html/

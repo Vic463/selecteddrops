@@ -1,0 +1,211 @@
+<!-- Instruktion til webbrowser om at vi kører HTML5 -->
+<!DOCTYPE html>
+
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - det ser brugeren ikke, men det fortæller noget om siden -->
+<head>
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>Bliv forhandler - Selected Drops</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="description" content="Specialiserer du dig inden for salg af vin og spiritus, og kunne du tænke dig at få vores rom i sortimentet? Kontakt vores erhvervskonsulent, så inviterer vi dig forbi til en samtale og rundvisning.">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+
+    <meta property="og:title" content="Vil du forhandle vores produkter?" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.vickimunk.dk/selecteddrops/erhverv.html" />
+    <meta property="og:image" content="http://www.vickimunk.dk/selecteddrops/images/forhandler1-web.jpg" />
+    <meta property="og:description" content="Forhandler du spiritus eller vin af god kvalitet, og vil du gerne sælge vores produkter hos jer? Så kontakt vores erhvervskonsulent og hør mere om, hvordan du kan blive forhandlere." />
+    <meta property="og:locale" content="da_DK" />
+
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.typekit.net/udj4vfl.css">
+    <script src="https://kit.fontawesome.com/11a5e78038.js" crossorigin="anonymous"></script>
+
+</head>
+
+<!-- i <body> har man alt indhold på siden som brugeren kan se -->
+<body>
+    <header class="container-fluid sticky-top px-0">
+        <nav class="container-fluid d-flex d-lg-none flex-row justify-content-between align-items-center">
+            <div class="click py-1" id="logotab"><a href="forside.html"><img src="images/Logo.svg"
+                                                                             alt="Selected Drops logo"></a></div>
+            <div class="d-flex flex-row">
+                <div class="mr-2">
+                    <a class="nav-link p-0 m-0" href="#" id="navbarDD" role="button" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-shopping-bag text-sort seksten"></i>
+                    </a>
+                    <div class="dropdown-menu rounded-0 px-2 bg-primary text-center" aria-labelledby="navbarDD">
+                        <p class="seksten mt-1">Indkøbskurv</p>
+                        <p class="text-muted my-3">Din indkøbskurv er tom</p>
+                        <a href="empty.html" class="btn overskrift bg-dark text-sort mb-1">Gå til betaling</a>
+                    </div>
+                </div>
+                <div>
+                    <a class="nav-link p-0 m-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-bars text-sort seksten"></i>
+                    </a>
+                    <div class="dropdown-menu rounded-0 bg-primary text-right pr-1 pr-sm-2 pl-sm-5"
+                         aria-labelledby="navbarDropdown">
+                        <p class="mt-2"><a href="produkt.html" class="text-decoration-none text-sort">Vores produkt</a></p>
+                        <p class="mt-2"><a href="tour.html" class="text-decoration-none text-sort">Besøg destilleriet</a></p>
+                        <p class="mt-2"><a href="sust.html" class="text-decoration-none text-sort">Bæredygtighed</a></p>
+                        <p class="mt-2"><a href="historie.html" class="text-decoration-none text-sort">Vores historie</a></p>
+                        <p class="mt-2"><a class="text-decoration-none text-sort click kontaktlink">Kontakt</a></p>
+                        <p class="my-2"><a href="erhverv.html" class="text-decoration-none text-sort aktuel">Bliv forhandler</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="container-fluid d-none d-lg-flex flex-row justify-content-center align-items-center">
+            <div class="click py-1" id="logoweb"><a href="forside.html"><img src="images/Logo.svg"
+                                                                             alt="Selected Drops logo"></a></div>
+        </nav>
+        <nav class="container-fluid d-none d-lg-block">
+            <div class="container d-none d-lg-flex flex-row justify-content-between align-items-center">
+                <a href="produkt.html" class="text-decoration-none text-sort fjorten">Vores produkt</a>
+                <a href="tour.html" class="text-decoration-none text-sort fjorten">Besøg destilleriet</a>
+                <a href="sust.html" class="text-decoration-none text-sort fjorten">Bæredygtighed</a>
+                <a href="historie.html" class="text-decoration-none text-sort fjorten">Vores historie</a>
+                <a class="text-decoration-none text-sort fjorten click kontaktlink">Kontakt</a>
+                <a href="erhverv.html" class="text-decoration-none text-sort fjorten aktuel">Bliv forhandler</a>
+                <div>
+                    <a class="nav-link p-0 m-0" href="#" id="navDD" role="button" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-shopping-bag text-sort seksten"></i>
+                    </a>
+                    <div class="dropdown-menu rounded-0 px-2 bg-primary text-center" aria-labelledby="navDD">
+                        <p class="seksten mt-1">Indkøbskurv</p>
+                        <p class="text-muted my-3">Din indkøbskurv er tom</p>
+                        <a href="empty.html" class="btn overskrift bg-dark text-sort mb-1">Gå til betaling</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="d-block d-sm-none bg-gold border-bottom border-sort position-sticky">
+            <div id="nbmob" class="d-flex flex-row justify-content-center align-items-center click">
+                <p class="">Nyhedsbrev</p>
+                <i id="pil" class="fas fa-chevron-down ml-1"></i>
+            </div>
+            <div id="nbmobinfo">
+                <div class="d-flex flex-column align-items-center px-2 py-1">
+                    <p class="ti">Tilmeld dig vores nyhedsbrev, og få de seneste nyheder, tilbud, tips & tricks og gode råd
+                        inden for alt, hvad der har med vores rom og spiritus at gøre.</p>
+                    <input class="mt-1" name="Navn" type="text" aria-label="Navn" placeholder="Navn">
+                    <input class="mt-1" name="E-mail" type="email" aria-label="E-mail" placeholder="E-mail">
+                    <a href="#" class="btn overskrift ti bg-dark mt-2 mb-1 text-sort">Tilmeld mig</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="d-none d-sm-block">
+        <div id="nbikon" class="click position-fixed bg-gold"><img src="images/Nyhedsbrev-fane.svg" alt="Nyhedsbrev"></div>
+        <div id="nbinfo" class="position-fixed bg-primary">
+            <div class="d-flex flex-column align-items-center px-2 py-1">
+                <div id="luknb" class="btn overskrift bg-secondary align-self-end">Luk vindue</div>
+                <h3 class="overskrift mb-2">Nyhedsbrev</h3>
+                <p>Tilmeld dig vores nyhedsbrev, og få de seneste nyheder, tilbud, tips & tricks og gode råd inden for alt,
+                    hvad der har med vores rom og spiritus at gøre.</p>
+                <input class="mt-1" name="Navn" type="text" aria-label="Navn" placeholder="Navn">
+                <input class="mt-1" name="E-mail" type="email" aria-label="E-mail" placeholder="E-mail">
+                <a href="#" class="btn overskrift bg-dark mt-2 mb-1 text-sort">Tilmeld mig</a>
+            </div>
+        </div>
+    </div>
+
+    <main class="container my-2">
+        <div class="row">
+            <div class="d-block d-lg-none col-12 px-0">
+                <img src="images/forhandler1-mob.jpg" alt="rom skænkes i glas" class="d-block d-sm-none mx-auto">
+                <img src="images/forhandler1-tab.jpg" alt="rom skænkes i glas" class="d-none d-sm-block">
+            </div>
+
+            <div class="col-12 col-lg-6 bg-primary mt-2 mt-lg-0 p-2 p-sm-3 d-flex flex-column align-items-center">
+                <h1 class="h5 overskrift my-2 mt-sm-0 mb-sm-3">Vil du forhandle vores produkt?</h1>
+                <p>
+                    Specialiserer din virksomhed sig i salg af vin og spiritus? Og kunne du være interesseret i at forhandle vores rom?
+                    Så send en mail til vores erhvervskonsulent Kirstine, og så inviterer vi dig (og eventuelt dit personale) til en snak og en guidet tur rundt på vores destilleri.
+                    <br>
+                    Som forhandler af Selected Drops’ produkter, er det vigtigt, at der er tid til at introducere kunden til rommen.
+                    Vi lægger stor vægt på, at det er en oplevelse at købe vores produkt, og derfor er det vigtigt, at du kan fortælle vores historie videre, når du selv står og skal sælge det til kunder i din butik.
+                </p>
+                <p class="my-1 my-sm-2 align-self-start">Kirstine kan kontaktes på:<br><br>kirstine@selecteddrops.dk</p>
+            </div>
+
+            <div class="d-block d-lg-none col-12 px-0 mt-2">
+                <img src="images/forhandler2-mob.jpg" alt="dekorativt glas med rom" class="d-block d-sm-none mx-auto">
+                <img src="images/forhandler2-tab.jpg" alt="dekorativt glas med rom" class="d-none d-sm-block mx-auto">
+            </div>
+
+            <div class="d-none d-lg-flex flex-column justify-content-around col-lg-6">
+                <img src="images/forhandler1-web.jpg" alt="rom skænkes i glas" class="mb-1">
+                <img src="images/forhandler2-web.jpg" alt="dekorativt glas med rom">
+            </div>
+        </div>
+    </main>
+
+    <footer class="container-fluid bg-secondary">
+        <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-center pt-3 pb-2 pb-lg-3">
+            <div class="mb-4 mb-lg-0" id="kontakt">
+                <p class="ti mb-1">Borgergade 143</p>
+                <p class="ti mb-1">4241 Vemmelev</p>
+                <p class="ti mb-1">kontakt@selecteddrops.dk</p>
+                <p class="ti mb-1">+45 12 34 56 78</p>
+                <div class="text-center">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square text-sort tyve mr-1"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin text-sort tyve"></i></a>
+                </div>
+            </div>
+            <div class="d-flex flex-column justify-content-between">
+                <a href="error404.html" class="ti mb-1 mb-lg-2 text-sort">Handelsbetingelser</a>
+                <a href="error404.html" class="ti mb-1 mb-lg-2 text-sort">Eksterne forhandlere</a>
+                <a href="https://www.verdensmaalene.dk/" target="_blank" class="ti mb-1 mb-lg-2 text-sort">FN's verdensmål</a>
+                <p class="ti mb-1">Alle rettigheder forbeholdes</p>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(function () {
+        $("#nbmob").click(function () {
+            $("#pil").toggleClass('fa-chevron-up');
+            $("#nbmobinfo").slideToggle(500);
+            $("#nbmob, #nbmobinfo").toggleClass('bg-primary')
+        });
+        $("#nbikon").click(function () {
+            $("#nbikon").hide(0);
+            $("#nbinfo").show(500)
+        });
+        $("#luknb").click(function () {
+            $("#nbinfo").hide(500);
+            $("#nbikon").show(0)
+        });
+        $(".kontaktlink").click(function(){
+            $("html,body").animate({scrollTop: $("#kontakt").offset().top}, 700);
+            setTimeout(function(){
+                $("#kontakt p").animate({fontSize: '14pt'}, 500);
+            }, 500);
+            setTimeout(function(){
+                $("#kontakt p").animate({fontSize: '10pt'}, 500);
+            }, 1000);
+        });
+    });
+</script>
+</body>
+</html>
