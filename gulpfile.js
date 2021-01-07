@@ -13,10 +13,11 @@ function styles() {
         gulp.src("css/*.scss")
             .pipe(sourcemaps.init())
             .pipe(sass())
-            //.pipe(postcss([autoprefixer({grid:true}), cssnano()]))
+            .pipe(postcss([autoprefixer({grid:true}), cssnano()]))
             .pipe(sourcemaps.write("."))
             .pipe(gulp.dest("css"))
     );
+
 }
 
 function js() {
@@ -40,3 +41,4 @@ const build = gulp.parallel(styles, js);
 exports.styles = styles;
 exports.js = js;
 exports.watch = watch;
+exports.build = build;
